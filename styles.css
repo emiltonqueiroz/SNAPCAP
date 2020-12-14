@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.800)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(steijn-leijzer-wgb_ihnRuC8-unsplash.jpg);
   height: 100vh;
   -webkit-background-size: cover;
@@ -132,9 +132,19 @@ header {
   color: #fff;
   text-transform: uppercase;
   font-size: 60px;
+
+  /*Name the Animation*/
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
-.title h1 span {
+.title span {
   color: #84c3f7;
+  /*Name the Animation*/
+  animation-name: moveDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
 }
 
 .titlebtn {
@@ -155,6 +165,35 @@ header {
 .titlebtn:hover {
   background: #fff;
   color: #333;
+}
+
+/*----------Heading Animation----------*/
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /*------------CATEGORIES---------------*/
@@ -235,7 +274,7 @@ header {
 /*------------- featured categories ----------------*/
 #featured-categories {
   padding-bottom: 30px;
-  background: linear-gradient(to top, #EFEFED,#f6f6f6);
+  background: linear-gradient(to top, #efefed, #f6f6f6);
 }
 
 .col-4 {
@@ -244,6 +283,7 @@ header {
   min-width: 200px;
   margin-bottom: 50px;
   transition: transform 0.3s;
+  backface-visibility: hidden;
 }
 
 .col-4 img {
@@ -284,11 +324,11 @@ h4 {
 
 /*------------------Offer----------------*/
 .offer {
-  background: #EFEFED;
+  background: #efefed;
 }
 
-.offer p{
-  color:  #000;
+.offer p {
+  color: #000;
 }
 
 .col-2 {
@@ -305,7 +345,7 @@ h4 {
   font-size: 40px;
   line-height: 60px;
   margin: 25px 0;
-  color:  #D8A95E;
+  color: #d8a95e;
 }
 
 .col-2 .offer-img {
@@ -317,7 +357,7 @@ small {
 }
 
 .offerbtn {
-  background: #D8A95E;
+  background: #d8a95e;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -332,5 +372,5 @@ small {
 }
 
 .offerbtn:hover {
-  background:  #eec675;
+  background: #eec675;
 }
