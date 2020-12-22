@@ -281,7 +281,7 @@ header {
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
-  transition: transform 0.3s;
+  transition: all 0.3s;
   backface-visibility: hidden;
 }
 
@@ -322,35 +322,35 @@ h4 {
 }
 
 .featured1:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+  content: url("images/Buckethats/Fila wilksy reversible bucket hat in camo1.png");
 }
 
 .featured2:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+  content: url("images/Snapback/SnapBack4.png");
 }
 
-.featured1:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+.featured3:hover {
+  content: url("images/Beanie/Beanie9.png");
 }
 
-.featured1:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+.featured4:hover {
+  content: url("images/Beanie/Beanie8.png");
 }
 
-.featured1:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+.featured5:hover {
+  content: url("images/Snapback/SnapBack8.png");
 }
 
-.featured1:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+.featured6:hover {
+  content: url("images/Beanie/Beanie6.png");
 }
 
-.featured1:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+.featured7:hover {
+  content: url("images/Buckethats/Dickies X Obey reversible flat top bucket hat in navy.png");
 }
 
-.featured1:hover {
-  content: url('images/Buckethats/Fila wilksy reversible bucket hat in camo1.png');
+.featured8:hover {
+  content: url("images/Snapback/SnapBack6.png");
 }
 
 /*------------------Offer----------------*/
@@ -550,11 +550,11 @@ select:focus {
   outline: none;
 }
 
-.page-btn{
+.page-btn {
   margin: 0 auto 80px;
 }
 
-.page-btn span{
+.page-btn span {
   display: inline-block;
   border: 1px solid #ff523b;
   margin-right: 10px;
@@ -565,7 +565,7 @@ select:focus {
   cursor: pointer;
 }
 
-.page-btn span:hover{
+.page-btn span:hover {
   background: #ff523b;
   color: #fff;
 }
@@ -582,5 +582,3 @@ select:focus {
     flex-basis: 100%;
   }
 }
-
-
