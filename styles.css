@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -311,7 +315,7 @@ h4 {
 }
 
 .rating .fa {
-  color: #84c3f7;
+  color: #008cff;
 }
 
 .container {
