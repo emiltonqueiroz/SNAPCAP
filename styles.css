@@ -93,9 +93,10 @@ header {
 
 /* Dropdown button */
 .dropdown .dropbtn {
+  
   text-transform: uppercase;
   padding: 1rem 3rem;
-  font-size: 18px;
+  font-size: 1.8rem;
   border: none;
   outline: none;
   color: #fff;
@@ -112,12 +113,14 @@ header {
 }
 
 .dropdown-content {
+  
   display: none;
   position: absolute;
   background-color: #f9f9f9;
 }
 
 .dropdown-content a {
+  width: 12rem;
   float: none;
   color: #000;
   padding: 1rem 4.3rem;
@@ -125,6 +128,7 @@ header {
   display: block;
   text-align: center;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .dropdown-content a:hover {
