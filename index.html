@@ -15,20 +15,23 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5fcd63e976.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>ScapCap | You need a Snap? or a Cap?</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header>
-      <div class="nav">
+      <div id="home" class="nav">
         <div class="logo">
-          <a href=""> <img src="caplogo.png" alt="" /></a>
+          <a href="#home"> <img src="caplogo.png" alt="" /></a>
         </div>
         <ul class="nav-area">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a id="contact" href="#">Contact me</a></li>
           <div class="dropdown">
             <button class="dropbtn">
               What we've got
@@ -40,6 +43,13 @@
               <a href="buckethats.html">Bucket hats</a>
             </div>
           </div>
+          <li><a href="#offer">Offers</a></li>
+          <li><a href="https://github.com/emiltonqueiroz">Portfolio</a></li>
+          <li>
+            <a id="contact" href="mailto:emiltonqueiroz@gmail.com"
+              ><i class="social-icon fas fa-envelope"></i> Contact me</a
+            >
+          </li>
         </ul>
       </div>
       <div class="title">
@@ -184,7 +194,7 @@
     </div>
 
     <!------Offer-------->
-    <div class="offer">
+    <div class="offer" id="offer">
       <div class="small-container">
         <div class="row">
           <div class="col-2">
@@ -208,7 +218,7 @@
         </div>
 
         <!-----------------Brands--------------->
-        <div class="brands">
+        <div class="brands" id="brands">
           <div class="small-container">
             <div class="row">
               <div class="col-5">
@@ -242,16 +252,32 @@
     </div>
 
     <!-----------------Footer--------------->
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="container">
         <div class="row">
           <div class="footer-col-4">
             <h3>Follow Us</h3>
             <ul>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">Youtube</a></li>
+              <li>
+                <a href="https://twitter.com/emiltonqueiroz"
+                  ><i class="social-icon fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=1735392095">
+                  <i class="social-icon fab fa-facebook-f"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/emiltonq/"
+                  ><i class="social-icon fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/emiltonqueiroz"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </li>
             </ul>
           </div>
 
@@ -265,7 +291,7 @@
             </ul>
           </div>
           <div class="footer-col-1">
-            <a href=""> <img src="caplogo.png" alt="" /></a>
+            <a href="#home"> <img src="caplogo.png" alt="" /></a>
             <p>
               We strive to responsibly make meaningful product that not only
               exemplifies our lifestyle, but enhances the ability to live it.
@@ -273,6 +299,10 @@
           </div>
         </div>
       </div>
+
+      <a class="gotopbtn" href="#home"
+        ><i class="fas fa-arrow-circle-up"></i
+      ></a>
     </div>
 
     <!--JS-->

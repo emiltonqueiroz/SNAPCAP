@@ -3,8 +3,9 @@
   padding: 0;
 }
 
-html{
+html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -113,7 +114,6 @@ header {
 }
 
 .dropdown-content {
-  
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -231,7 +231,7 @@ header {
 
 .col-3 img {
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .categorie-img {
@@ -271,8 +271,8 @@ header {
   content: "";
   background: #84c3f7;
   width: 30rem;
-  height: .5rem;
-  border-radius: .5rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -296,7 +296,7 @@ header {
 
 .col-4 img {
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .col-4:hover {
@@ -446,15 +446,15 @@ small {
   padding: 6rem 0 2rem;
 }
 
-.footer a:link, a:visited {
+.footer a:link,
+a:visited {
   text-decoration: none;
   color: #8a8a8a;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: white;
 }
-
 
 .footer h3 {
   color: #fff;
@@ -474,7 +474,7 @@ small {
 
 .footer-col-1 img {
   width: 25rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-col-4 {
@@ -560,8 +560,8 @@ ul {
 }
 
 select {
-  border: .1rem solid #ff523b;
-  padding: .5rem;
+  border: 0.1rem solid #ff523b;
+  padding: 0.5rem;
 }
 
 select:focus {
@@ -574,7 +574,7 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
-  border: .1rem solid #ff523b;
+  border: 0.1rem solid #ff523b;
   margin-right: 1rem;
   width: 4rem;
   height: 4rem;
@@ -599,4 +599,16 @@ select:focus {
   .col-4 {
     flex-basis: 100%;
   }
+}
+
+.gotopbtn {
+  position: fixed;
+  color: #000000;
+  width: 45px;
+  height: 45px;
+  bottom: 30px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 35px;
 }
