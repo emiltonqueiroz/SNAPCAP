@@ -15,8 +15,6 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-
-
     <!-- font Awesome -->
     <script
       src="https://kit.fontawesome.com/5fcd63e976.js"
@@ -42,8 +40,11 @@
           <a href="#home"> <img src="caplogo.png" alt="" /></a>
         </div>
 
-        
-        <ul class="nav-area">
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <ul class="nav-area" id="nav-area">
           <div class="dropdown">
             <button class="dropbtn">
               What we've got
@@ -64,13 +65,16 @@
           </li>
         </ul>
       </div>
-      <div class="title">
-        <h1>You need a <span>Snap</span>? <br />or a <span>Cap</span>?</h1>
-        <a href="#categories" class="titlebtn"> Lets look Fresh</a>
-      </div>
     </header>
-  
-    
+    <!---------- Tittle ----------->
+    <div class="small-container">
+      <div class="row">
+        <div class="title">
+          <h1>You need a <span>Snap</span>? <br />or a <span>Cap</span>?</h1>
+          <a href="#categories" class="titlebtn"> Lets look Fresh</a>
+        </div>
+      </div>
+    </div>
     <!---------- Categories ----------->
     <div id="categories">
       <h2 id="text-white" class="text">WHAT'VE WE GOT FOR YOU</h2>
@@ -253,7 +257,7 @@
       <svg
         class="wave"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 -8 1440 200"
+        viewbox="0 20 1440 200"
       >
         <path
           fill="#000"

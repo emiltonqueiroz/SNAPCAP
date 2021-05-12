@@ -3,6 +3,17 @@ var target = document.querySelector(".footer");
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 var rootElement = document.documentElement;
 
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function hamburger() {
+  var x = document.getElementById("nav-area");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
 // Next we want to create a function that will be called when that element is intersected
 function callback(entries, observer) {
   // The callback will return an array of entries, even if you are only observing a single item
