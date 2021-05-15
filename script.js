@@ -3,17 +3,6 @@ var target = document.querySelector(".footer");
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 var rootElement = document.documentElement;
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function hamburger() {
-  var x = document.getElementById("nav-area");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-
 // Next we want to create a function that will be called when that element is intersected
 function callback(entries, observer) {
   // The callback will return an array of entries, even if you are only observing a single item
@@ -40,8 +29,6 @@ let observer = new IntersectionObserver(callback);
 // Finally start observing the target element
 observer.observe(target);
 
-
-
 // Scroll Progress
 window.onscroll = function () {
   myFunction();
@@ -54,4 +41,14 @@ function myFunction() {
     document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+// Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu
+function hamburger() {
+  var x = document.getElementById("nav-area");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }

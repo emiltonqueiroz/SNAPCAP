@@ -106,6 +106,10 @@ header {
   background: #008eff;
 }
 
+.icon {
+  display: none;
+}
+
 /*------------------- Dropdown ---------------*/
 
 /* The dropdown container */
@@ -532,7 +536,6 @@ ul {
   text-align: center;
 }
 
-
 /*--------------------- Go to Top ------------------*/
 .scrollToTopBtn {
   color: rgb(0, 162, 255);
@@ -588,8 +591,13 @@ select:focus {
   color: #fff;
 }
 
-/*--------------------- media queuy for menu ------------------*/
+
+/*----------------- Media Queries ----------------------*/
 @media only screen and (max-width: 800px) {
+  .icon {
+    display: block;
+  }
+
   .nav-area {
     display: none;
     position: absolute;
@@ -602,11 +610,8 @@ select:focus {
     background-color: inherit;
     align-items: center;
     text-align: center;
-    padding: 1rem 0rem;
-  }
-
-  nav ul {
-    display: none;
+    padding: 2rem 2rem;
+    height: 50rem;
   }
 
   .nav a.icon {
@@ -620,14 +625,12 @@ select:focus {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .logo {
-    padding-left: 1%;
-  }
 
+
+@media only screen and (max-width: 600px) {
   .logo img {
-    padding-top: 1.5rem;
-    height: 4.5rem;
+    padding-top: 2rem;
+    height: 5rem;
   }
 
   .nav-area {
@@ -640,14 +643,15 @@ select:focus {
     right: 4rem;
     width: 5rem;
     height: 5rem;
+    text-align: center;
   }
 
-}
-
-/*------media query for less than 600 screen size------*/
-@media only screen and (max-width: 600px) {
   .row {
     text-align: center;
+  }
+
+  .small-container {
+    width: 30rem;
   }
 
   .col-2,
@@ -655,12 +659,32 @@ select:focus {
   .col-4 {
     flex-basis: 100%;
   }
-
-  .small-container .col-3 {
+  .small-container {
     padding-bottom: 2rem;
   }
 
   .title {
     width: 45rem;
+  }
+
+  .nav-area {
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    right: 0rem;
+    width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(70, 64, 64);
+    align-items: center;
+    text-align: center;
+    height: 50rem;
+    z-index: 20;
+  }
+
+  header{
+    z-index: 10;
+    position: sticky;
   }
 }
