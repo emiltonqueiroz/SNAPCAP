@@ -1,0 +1,629 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6%;
+  background-color: #24252a;
+  font-size: 2rem;
+  position: sticky;
+}
+
+.logo {
+  width: 20rem;
+  cursor: pointer;
+}
+
+.navlinks a,
+.cta,
+.overlaycontent a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+}
+
+.navlinks li {
+  padding: 0px 20px;
+}
+
+.navlinks li a {
+  transition: color 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+  color: #007bdd;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: #84c3f7;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: #007bdd;
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlayactive {
+  width: 100%;
+}
+
+.overlaycontent {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+/*---------------Start---------------*/
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*---------------Scrollbar---------------*/
+body::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #84c3f7;
+}
+
+/*---------------Progress-bar---------------*/
+.progress {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #000;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #008cff;
+  width: 0%;
+}
+
+/*-------------------TITLE----------------*/
+header {
+    display: grid;
+    place-items: center;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(steijn-leijzer-wgb_ihnRuC8-unsplash.jpg);
+
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 6rem;
+
+  /*Name the Animation*/
+  animation-name: moveDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.title span {
+  color: #84c3f7;
+}
+
+.titlebtn {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 1.5rem 5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  display: inline-block;
+  color: #fff;
+  box-shadow: 0rem 0rem 5rem 2.5rem #ffffff60;
+  transition: background 0.3s;
+}
+
+.titlebtn:hover {
+  background: #fff;
+  color: #333;
+}
+
+/*----------Heading Animation----------*/
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80% {
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/*--------------waves-----------------*/
+.wave {
+  margin-bottom: -1rem;
+  padding: 0rem;
+}
+
+/*------------CATEGORIES---------------*/
+#categories {
+  padding-bottom: 5rem;
+  background: linear-gradient(to top, #f6f6f6, #030202);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.small-container {
+  max-width: 108rem;
+  margin: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.col-3 {
+  position: relative;
+  flex-basis: 30%;
+  min-width: 25rem;
+}
+
+.col-3 img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.categorie-img {
+  position: relative;
+  z-index: 1;
+}
+
+.categorie-text {
+  position: absolute;
+  z-index: 2;
+  transition: transform 0.2s, filter 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.categorie-text:hover {
+  filter: grayscale(0);
+  transform: scale(1.02);
+}
+
+.text {
+  padding-top: 3rem;
+  text-align: center;
+  margin: 0 auto 3rem;
+  position: relative;
+  line-height: 6rem;
+}
+
+#text-white {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+#text-dark {
+  color: #000000;
+  font-size: 2.5rem;
+}
+
+.text::after {
+  content: "";
+  background: #84c3f7;
+  width: 30rem;
+  height: 0.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*------------- featured categories ----------------*/
+#featured-categories {
+  padding-bottom: 3rem;
+  background: linear-gradient(to top, #efefed, #f6f6f6);
+}
+
+.col-4 {
+  flex-basis: 23%;
+  padding: 1rem;
+  min-width: 20rem;
+  margin-bottom: 5rem;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.col-4 img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.col-4:hover {
+  transform: scale(1.03);
+}
+
+.text {
+  text-align: center;
+  margin: 0 auto 8rem;
+  position: relative;
+  line-height: 6rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.col-4 p {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.rating .fa {
+  font-size: 1.5rem;
+  color: #008cff;
+}
+
+.container {
+  max-width: 130rem;
+  margin: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.featured1:hover {
+  content: url("images/Buckethats/Fila wilksy reversible bucket hat in camo1.png");
+}
+
+.featured2:hover {
+  content: url("images/Snapback/SnapBack4.png");
+}
+
+.featured3:hover {
+  content: url("images/Beanie/Beanie9.png");
+}
+
+.featured4:hover {
+  content: url("images/Beanie/Beanie8.png");
+}
+
+.featured5:hover {
+  content: url("images/Snapback/SnapBack8.png");
+}
+
+.featured6:hover {
+  content: url("images/Beanie/Beanie6.png");
+}
+
+.featured7:hover {
+  content: url("images/Buckethats/Dickies X Obey reversible flat top bucket hat in navy.png");
+}
+
+.featured8:hover {
+  content: url("images/Snapback/SnapBack6.png");
+}
+
+/*------------------Offer----------------*/
+.offer {
+  background: #efefed;
+}
+
+.offer p {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 30rem;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 5rem 0;
+}
+
+.col-2 h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+  margin: 2.5rem 0;
+  color: #d8a95e;
+}
+
+.col-2 .offer-img {
+  padding: 5rem;
+}
+
+small {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.offerbtn {
+  background: #d8a95e;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1.5rem 5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  display: inline-block;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.offerbtn:hover {
+  transform: scale(1.3);
+  background: #eec675;
+}
+
+/*-----------BRANDS-------------*/
+.brands {
+  margin: 10rem auto;
+}
+
+.col-5 {
+  width: 15rem;
+}
+
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.col-5 img:hover {
+  filter: grayscale(0);
+}
+
+/*-----------FOOTER-------------*/
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 1.4rem;
+  padding: 6rem 0 2rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.footer-col-1,
+.footer-col-4 {
+  min-width: 25rem;
+  margin-bottom: 3rem;
+}
+
+.footer-col-1 {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.footer-col-1 img {
+  width: 25rem;
+  margin-bottom: 0.5rem;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-col-1 img:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app-logo {
+  margin-top: 2rem;
+}
+
+.app-logo img {
+  width: 14rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/*--------------------- Go to Top ------------------*/
+.scrollToTopBtn {
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+  font-size: 3.5rem;
+  width: 4rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*----------------- All Products ----------------------*/
+.row-2 {
+  justify-content: space-between;
+  margin: 10rem auto 5rem;
+}
+
+select {
+  border: 0.1rem solid #ff523b;
+  padding: 0.5rem;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 0 auto 8rem;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 0.1rem solid #ff523b;
+  margin-right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background: #ff523b;
+  color: #fff;
+}
+
+/*----------------- Media Queries ----------------------*/
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .small-container {
+    width: 30rem;
+  }
+
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%;
+  }
+  .small-container {
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    width: 45rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navlinks,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
