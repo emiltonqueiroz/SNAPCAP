@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!---Google Fonts-->
     <link
@@ -21,10 +23,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>ScapCap | You need a Snap? or a Cap?</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 
+    <title>ScapCap | You need a Snap? or a Cap?</title>
+  </head>
   <body>
     <!---------- Progress-bar ----------->
     <div class="progress">
@@ -34,52 +37,44 @@
     </div>
 
     <!---------- Navigation ----------->
-    <header>
-      <div id="home" class="nav">
-        <div class="logo">
-          <a href="#home"> <img src="caplogo.png" alt="" /></a>
-        </div>
-
-        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-          <i class="fa fa-bars"></i>
-        </a>
-
-        <ul class="nav-area" id="nav-area">
-          <div class="dropdown">
-            <button class="dropbtn">
-              What we've got
-              <i class="fa fa-caret-down"></i>
-            </button>
-
-            <div class="dropdown-content">
-              <a href="beanies.html">Beanies</a>
-              <a href="snapbacks.html">Snapbacks</a>
-              <a href="buckethats.html">Bucket hats</a>
-            </div>
-          </div>
-          <li><a href="#offer">Offers</a></li>
-          <li><a href="https://github.com/emiltonqueiroz">Portfolio</a></li>
-          <li>
-            <a id="contact" href="mailto:emiltonqueiroz@gmail.com"
-              ><i class="social-icon fas fa-envelope"></i> Contact me</a
-            >
-          </li>
+    <nav>
+      <a href="#"> <img class="logo" src="caplogo.png" alt="" /></a>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="beanies.html">Beanies</a></li>
+          <li><a href="snapbacks.html">Snapbacks</a></li>
+          <li><a href="buckethats.html">Bucket hats</a></li>
+          <li><a href="#offer">Offer</a></li>
+          <li><a href="#">Resume</a></li>
         </ul>
-      </div>
-    </header>
-    <!---------- Tittle ----------->
-    <div class="small-container">
-      <div class="row">
-        <div class="title">
-          <h1>You need a <span>Snap</span>? <br />or a <span>Cap</span>?</h1>
-          <a href="#categories" class="titlebtn"> Lets look Fresh</a>
-        </div>
+      </nav>
+
+      <a class="cta" href="mailto:emiltonqueiroz@gmail.com"
+        ><i class="social-icon fas fa-envelope"></i> Contact me</a
+      >
+      <a class="menu burger" href="#"> &#9776;</a>
+    </nav>
+
+    <div class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlaycontent">
+        <a href="beanies.html">Beanies</a>
+        <a href="snapbacks.html">Snapbacks</a>
+        <a href="buckethats.html">Bucket hats</a>
+        <a href="https://github.com/emiltonqueiroz">Portfolio</a>
       </div>
     </div>
+    <!---------- Header ----------->
+    <header>
+      <div class="title">
+        <h1>You need a <span>Snap</span>? <br />or a <span>Cap</span>?</h1>
+        <a href="#categories" class="titlebtn"> Lets look Fresh</a>
+      </div>
+    </header>
     <!---------- Categories ----------->
     <div id="categories">
       <h2 id="text-white" class="text">WHAT'VE WE GOT FOR YOU</h2>
-      <div class="small-container">
+      <div class="small-container  ">
         <div class="row">
           <div class="col-3">
             <a href="beanies.html"
@@ -258,7 +253,7 @@
       <svg
         class="wave"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="15 0 1440 200"
+        viewbox="0 0 1440 200"
       >
         <path
           fill="#000"
