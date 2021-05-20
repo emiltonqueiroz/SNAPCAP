@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -38,7 +37,7 @@ body::-webkit-scrollbar-thumb {
 
 .progress-container {
   width: 100%;
-  height: .5rem;
+  height: 0.5rem;
   background: #000;
 }
 
@@ -47,7 +46,6 @@ body::-webkit-scrollbar-thumb {
   background: #008cff;
   width: 0%;
 }
-
 
 nav {
   display: flex;
@@ -91,7 +89,7 @@ nav {
 }
 
 .cta {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: #84c3f7;
   border: none;
   border-radius: 50px;
@@ -102,7 +100,6 @@ nav {
 .cta:hover {
   background-color: #007bdd;
 }
-
 
 /*---------------  Tablet/Mobile Nav  ---------------*/
 .burger {
@@ -117,7 +114,7 @@ nav {
 
 .burger :hover {
   background-color: #007bdd;
-} 
+}
 
 .overlay {
   height: 100%;
@@ -164,8 +161,8 @@ nav {
 
 /*-------------------TITLE----------------*/
 header {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
   height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
     url(steijn-leijzer-wgb_ihnRuC8-unsplash.jpg);
@@ -236,7 +233,7 @@ header {
 
 /*------------CATEGORIES---------------*/
 #categories {
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   background: linear-gradient(to top, #f6f6f6, #030202);
 }
 
@@ -367,7 +364,7 @@ h4 {
 }
 
 .featured1:hover {
-  content: url("images/Buckethats/Fila wilksy reversible bucket hat in camo1.png");
+  content: url("images/Buckethats/Fila\ wilksy\ reversible\ bucket\ hat\ in\ camo1.png");
 }
 
 .featured2:hover {
@@ -618,9 +615,9 @@ select:focus {
   .small-container {
     padding-bottom: 2rem;
   }
-.space{
-  padding-bottom: 50rem;
-}
+  .space {
+    padding-bottom: 50rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -631,5 +628,4 @@ select:focus {
   .menu {
     display: initial;
   }
-
 }
