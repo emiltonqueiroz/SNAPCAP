@@ -108,12 +108,12 @@ nav {
   padding: 1rem 1.5rem;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
   color: #fff;
 }
 
-.burger :hover {
-  background-color: #007bdd;
+.burger:hover {
+  color: #007bdd;
 }
 
 .overlay {
@@ -149,7 +149,7 @@ nav {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #0088a9;
+  color: #007bdd;
 }
 .overlay .close {
   position: absolute;

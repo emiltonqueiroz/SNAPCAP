@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!---Google Fonts-->
     <link
@@ -9,47 +11,145 @@
       rel="stylesheet"
     />
 
-    <!---Font Awesome CDN-->
+    <!--Bootstrap CDN  -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5fcd63e976.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="buckethats.css" />
+
     <title>ScapCap | You need a Snap? or a Cap?</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header>
-      <div class="nav">
-        <div class="logo">
-          <a href=""> <img src="caplogo.png" alt="" /></a>
-        </div>
-        <ul class="nav-area">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a id="contact" href="#">Contact me</a></li>
-          <div class="dropdown">
-            <button class="dropbtn">
-              What we've got
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Beanie</a>
-              <a href="#">Snapback</a>
-              <a href="#">Brimless hats</a>
-            </div>
-          </div>
+    <!---------- Progress-bar ----------->
+    <div class="progress">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    </div>
+
+    <!---------- Navigation ----------->
+    <nav>
+      <a href="Index.html"> <img class="logo" src="caplogo.png" alt="" /></a>
+      <nav>
+        <ul class="navlinks">
+          <li><a href="beanies.html">Beanies</a></li>
+          <li><a href="snapbacks.html">Snapbacks</a></li>
+          <li><a href="buckethats.html">Bucket hats</a></li>
+          <li><a href="#offer">Offer</a></li>
+          <li><a href="#">Resume</a></li>
         </ul>
+      </nav>
+
+      <a class="cta" href="mailto:emiltonqueiroz@gmail.com"
+        ><i class="social-icon fas fa-envelope"></i> Contact me</a
+      >
+      <a class="menu burger" href="#"> &#9776;</a>
+    </nav>
+
+    <div class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlaycontent">
+        <a href="beanies.html">Beanies</a>
+        <a href="snapbacks.html">Snapbacks</a>
+        <a href="buckethats.html">Bucket hats</a>
+        <a href="https://github.com/emiltonqueiroz">Portfolio</a>
       </div>
-      <div class="title">
-        <h1>You need a <span>Snap</span>? <br />or a <span>Cap</span>?</h1>
-        <a href="#categories" class="titlebtn"> Lets look Fresh</a>
+    </div>
+
+    <!------------- featured categories ---------------->
+    <div id="featured-categories">
+      <div class="small-container">
+        <h2 id="text-dark" class="text">OUR HOTTEST COLLECTION</h2>
+        <div class="row">
+          <div class="col-4">
+            <img
+              class="featured1"
+              src="images/Buckethats/ASOS DESIGN wide brim bucket hat in black cotton.png"
+              alt=""
+            />
+            <h4>Lorem, ipsum dolor.</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
+
+          <div class="col-4">
+            <img
+              class="featured2"
+              src="images/Buckethats/ASOS DESIGN wide brim safari bucket hat in black with tie drawcord.png"
+              alt=""
+            />
+            <h4>Lorem, ipsum dolor.</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
+
+          <div class="col-4">
+            <img
+              class="featured3"
+              src="images/Buckethats/Carhartt WIP corduroy bucket hat in burnt orange.png"
+              alt=""
+            />
+            <h4>Lorem, ipsum dolor.</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                ><i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
+
+          <div class="col-4">
+            <img
+              class="featured4"
+              src="images/Buckethats/Dickies X Obey reversible flat top bucket hat in navy 1.png"
+              alt=""
+            />
+            <h4>Lorem, ipsum dolor.</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
+
+          <div class="col-4">
+            <img
+              class="featured5"
+              src="images/Buckethats/Fila wilksy reversible bucket hat in camo.png"
+              alt=""
+            />
+            <h4>Lorem, ipsum dolor.</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star"></i><i class="fa fa-star"></i
+              ><i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
 
     <!---------- Categories ----------->
-
     <div id="categories">
       <h2 id="text-white" class="text">WHAT'VE WE GOT FOR YOU</h2>
       <div class="small-container">
@@ -69,7 +169,7 @@
           </div>
           <div class="col-3">
             <a href="buckethats.html"
-              ><img class="categorie-text" src="4.png" alt="" />
+              ><img class="categorie-text" src="3.png" alt="" />
               <img class="categorie-img" src="BucketHat.png" alt=""
             /></a>
           </div>
@@ -77,114 +177,8 @@
       </div>
     </div>
 
-    <!------------- featured categories ---------------->
-    <div id="featured-categories">
-      <div class="small-container">
-        <h2 id="text-dark" class="text">OUR BEST SELLERS</h2>
-        <div class="row">
-          <div id="img1" class="col-4">
-            <img
-              class="featured1"
-              src="images/Buckethats/Fila wilksy reversible bucket hat in camo.png"
-              alt=""
-            />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-
-          <div class="col-4">
-            <img class="featured2" src="images/Snapback/SnapBack3.png" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-
-          <div class="col-4">
-            <img class="featured3" src="images/Beanie/Beanie10.png" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-
-          <div class="col-4">
-            <img class="featured4" src="images/Beanie/Beanie7.png" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-4">
-            <img class="featured5" src="images/Snapback/SnapBack7.png" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-
-          <div class="col-4">
-            <img class="featured6" src="images/Beanie/Beanie5.png" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-
-          <div class="col-4">
-            <img
-              class="featured7"
-              src="images/Buckethats/Dickies X Obey reversible flat top bucket hat in navy 1.png"
-              alt=""
-            />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-
-          <div class="col-4">
-            <img class="featured8" src="images/Snapback/SnapBack5.png" alt="" />
-            <h4>Red Printed T-shirt</h4>
-            <div class="rating">
-              <i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star"></i><i class="fa fa-star"></i
-              ><i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!------Offer-------->
-    <div class="offer">
+    <!------------------Offer------------------>
+    <div class="offer" id="offer">
       <div class="small-container">
         <div class="row">
           <div class="col-2">
@@ -208,7 +202,7 @@
         </div>
 
         <!-----------------Brands--------------->
-        <div class="brands">
+        <div class="brands" id="brands">
           <div class="small-container">
             <div class="row">
               <div class="col-5">
@@ -231,7 +225,7 @@
       <svg
         class="wave"
         xmlns="http://www.w3.org/2000/svg"
-        viewbox="0 -10 1440 200"
+        viewbox="0 0 1440 200"
       >
         <path
           fill="#000"
@@ -241,31 +235,48 @@
       </svg>
     </div>
 
-    <!-----------------Footer--------------->
+    <!-----------------Footer 0 20 1440 200------------------->
+
     <div class="footer">
       <div class="container">
         <div class="row">
           <div class="footer-col-4">
             <h3>Follow Us</h3>
             <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
+              <li>
+                <a href="https://twitter.com/emiltonqueiroz"
+                  ><i class="social-icon fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=1735392095">
+                  <i class="social-icon fab fa-facebook-f"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/emiltonq/"
+                  ><i class="social-icon fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/emiltonqueiroz"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </li>
             </ul>
           </div>
 
           <div class="footer-col-4">
             <h3>Useful Links</h3>
             <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
+              <li><a href="">Coupons</a></li>
+              <li><a href="">Blog Post</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Join Affiliate</a></li>
             </ul>
           </div>
           <div class="footer-col-1">
-            <a href=""> <img src="caplogo.png" alt="" /></a>
+            <a href="#home"> <img src="caplogo.png" alt="" /></a>
             <p>
               We strive to responsibly make meaningful product that not only
               exemplifies our lifestyle, but enhances the ability to live it.
@@ -274,6 +285,8 @@
         </div>
       </div>
     </div>
+
+    <button><i class="scrollToTopBtn fas fa-arrow-circle-up"></i></button>
 
     <!--JS-->
     <script type="text/javascript" src="script.js"></script>
